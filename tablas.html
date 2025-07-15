@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Elite Futurista</title>
+  <link rel="stylesheet" href="tablas.css" /> <!-- No olvidar link del css -->
+</head>
+<body>
+
+  <!-- 🙌 Menú de navegación anclado -->
+  <header> <!-- se usa más que todo por estructura, indica que esto pertenece al encabezado -->
+    <nav class="menu"> <!-- indica que lo que esta adentro lleva links -->
+      <a href="#inicio">Inicio</a> <!-- el (a) se usa para  llevar a secciones que tienen  id
+       (paginas de una sola vista) -->
+      <a href="#modelo">Modelo</a>
+      <a href="#ficha">Ficha Técnica</a>
+      <a href="#exclusivo">Exclusivo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+ <!--  Sección 1: Portada con imagen de fondo -->
+<section id="inicio" class="portada"> <!-- no olvidar colocar el id si quieres 
+    anclar el menu con los # de arriba-->
+  <div class="contenido-portada"> <!-- marcarlo con secciones y luego con div ayuda a organizar -->
+    <h1>Autos futuristas</h1>
+    <p>Un auto para dominar el futuro. Diseño, potencia y tecnología sin límites.</p>
+    <a href="#modelo" class="boton">Descubre más</a> <!-- para ponerle ancla a un botón, 
+    se escribe el código de a y href antes de este -->
+  </div>
+</section>
+
+
+  <!--  Sección 2: Modelo destacado con estilo lujoso -->
+<section id="modelo" class="modelo">
+  <img src="carro.png" alt="Auto futurista" class="imagen-auto" />
+  
+  <div class="tarjeta-modelo">
+    <h2>Modelo Élite X</h2>
+    <ul> <!-- ✅ <ul> (lista no ordenada): agrupa características.
+
+              ✅ <li>: cada línea es un ítem del auto. -->
+      <li>⚙️ Motor cuántico dual</li>
+      <li>🚀 Velocidad máx: 420 km/h</li>
+      <li>🔋 Autonomía: 1.500 km</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- 📊 Sección 3: Ficha técnica con tablas -->
+  <section id="ficha" class="ficha">
+    <h2>Ficha Técnica</h2>
+    <table> <!--<tr>: table row = fila. 👉
+
+                <th>: table header = celda de encabezado (más oscura).
+
+                <td>: table data = celda normal . -->
+
+      <tr><th>Aspecto</th><th>Valor</th></tr>
+      <tr><td>0-100 km/h</td><td>1.9 seg</td></tr>
+      <tr><td>Peso</td><td>980 kg</td></tr>
+      <tr><td>Material</td><td>Fibra de grafeno</td></tr>
+    </table>
+
+    <table>
+      <tr><th>Sistema</th><th>Capacidad</th></tr>
+      <tr><td>IA de navegación</td><td>Integrada</td></tr>
+      <tr><td>Recarga</td><td>25 minutos</td></tr>
+      <tr><td>Autonomía </td><td>2000 km</td></tr>
+    </table>
+  </section>
+
+  <!-- 💎 Sección 4: Exclusividad -->
+  <section id="exclusivo" class="exclusivo">
+    <h2>Exclusividad Total</h2>
+    <p>Edición limitada a 99 unidades.
+         Cada vehículo con número de serie y entrega personalizada global.</p>
+    <button class="boton">Reservar ahora</button> <!-- 🫵 recordar colocarle clases a los botones -->
+  </section>
+w
+  <!-- 🚘 Sección 5: Catálogo de autos futuristas -->
+<section id="catalogo" class="catalogo">
+  <h2>Catálogo de Modelos</h2>
+
+
+  <div class="catalogo-grid"> <!-- class="catalogo-grid": esta clase permite que en el CSS 
+    se acomoden en forma de cuadrícula o columnas, como un "catálogo real".-->
+
+    <!-- Tarjeta 1 -->
+    <div class="tarjeta-auto">
+      <img src="diamante.jpeg" alt="Modelo Nébula" />
+      <h3>Modelo Nébula</h3>
+      <p>El balance perfecto entre diseño y autonomía.</p>
+      <a href="#" class="boton">Ver más</a>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="tarjeta-auto">
+      <img src="azul.jpeg" alt="Modelo Orion" />
+      <h3>Modelo Orion</h3>
+      <p>Diseñado para dominar el terreno urbano.</p>
+      <a href="#" class="boton">Ver más</a>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="tarjeta-auto">
+      <img src="blanco.jpeg" alt="Modelo Eclipse" />
+      <h3>Modelo Eclipse</h3>
+      <p>Edición limitada con rendimiento supremo.</p>
+      <a href="#" class="boton">Ver más</a>
+    </div>
+  </div>
+</section>
+
+<!-- 📍 Sección 6: Ubicación GPS -->
+<section id="ubicacion" class="ubicacion">
+  <h2>Ubicación del Centro de Exhibición</h2>
+
+  <div class="mapa-container">
+    <!-- Google Maps insertado por iframe -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.887423413716!2d-74.0817543857367!3d4.609710443954934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a3a2d4bcb1%3A0x44c5b3b0b1f1df00!2sBogotá%2C%20Colombia!5e0!3m2!1ses!2sco!4v1628773150401!5m2!1ses!2sco" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <p class="direccion">Avenida Futuro 4040, Bogotá, Colombia</p>
+  <a href="https://www.google.com/maps" target="_blank" class="boton-direccion">Ver en Google Maps</a>
+</section>
+
+
+
+  <!-- ✉️ Sección 7: Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" placeholder="Tu nombre" />
+
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" placeholder="ejemplo@correo.com" />
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+
+      <button type="submit" class="boton">Enviar</button>
+    </form>
+  </section>
+
+</body>
+</html>
